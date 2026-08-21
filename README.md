@@ -1,5 +1,5 @@
 # Ex. No: 8   Packet Tracer: Connect a Router to a LAN
-# Date: ___________
+# Date: 20/08/2026
 ________________________________________<br>
 # Objective
 Configure and verify router LAN/WAN interfaces in Cisco Packet Tracer and test end-to-end connectivity.<br>
@@ -15,7 +15,8 @@ ________________________________________<br>
 •	Copper straight-through cables for LAN links; Serial DCE/DTE cable for WAN link <br>
 ________________________________________<br>
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1—S1—PC1/PC2 and R2—S2—PC3/PC4, plus R1–R2 Serial link S0/0/0.)<br>
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a85a7b24-5a9b-4a9c-ab5d-8d31345b2328" />
+<br>
 ________________________________________<br>
 Addressing Table (from activity)<br>
 Device	Interface	IP Address	Subnet Mask	Default Gateway<br>
@@ -112,10 +113,18 @@ ________________________________________<br>
 ________________________________________<br>
 # Output (Attach Screenshots)
 •	show ip interface brief on R1 and R2 (after configuration)<br>
+
+<img width="864" height="890" alt="image" src="https://github.com/user-attachments/assets/1e55a1c1-2818-49e9-a355-92b6722093c8" />
+<img width="859" height="880" alt="image" src="https://github.com/user-attachments/assets/9927f222-6a95-43a9-983a-31042ace8d08" />
+
+
+
 •	show ip route on R1 and R2<br>
 •	Successful ping PC1 → PC4; R2 → PC2<br>
+<img width="866" height="851" alt="image" src="https://github.com/user-attachments/assets/f2594fa4-8cfa-47bb-b5d5-1c90abb2c44b" />
+<img width="828" height="309" alt="image" src="https://github.com/user-attachments/assets/56e6cc8b-49d3-48e4-aeab-225d22b9259c" />
+
 •	Interface up messages after no shutdown on each link <br>
 ________________________________________<br>
 # Result
 R1 and R2 were configured with correct IPv4 addresses and interface descriptions, links were brought up, routing tables showed connected networks, and end-to-end connectivity between PCs across the WAN link was verified using pings. The configurations were saved to NVRAM for persistence.<br>
-
